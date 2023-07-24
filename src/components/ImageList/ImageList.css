@@ -1,0 +1,35 @@
+/* ImageList.css */
+
+.image-card {
+    /* max-width: 300px; */
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Set the fixed height for the card */
+    width: 100%; /* Set the fixed width for the card */
+  }
+  
+  .image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .description {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .image-card:hover .description {
+    display: block;
+  }
+  
